@@ -1,56 +1,66 @@
 # Q-A-System
-📚 Overview
-This interactive Q&A system allows students to ask questions about their "English For Today - Class 5" textbook and get AI-powered answers based specifically on the textbook content.
 
-🚀 Features
-Textbook-based Answers: All responses are generated from the actual textbook content
+## 📚 Overview
+**Q-A-System** is an interactive question-and-answer platform designed for students of **"English For Today - Class 5"**. It allows students to ask questions and receive **AI-powered answers** derived specifically from the textbook content, ensuring accurate and relevant learning support.
 
-Smart Search: Uses AI embeddings to find the most relevant textbook sections
+---
 
-Student-Friendly: Simple, clear answers suitable for Class 5 students
+## 🚀 Features
+- **Textbook-Based Answers:** Responses are generated directly from the actual textbook content.  
+- **Smart Search:** Utilizes AI embeddings to locate the most relevant sections of the textbook.  
+- **Student-Friendly:** Provides simple, clear, and easy-to-understand answers for Class 5 students.  
+- **Interactive Interface:** User-friendly question-and-answer format for smooth interaction.  
 
-Interactive Interface: Easy-to-use question and answer format
+---
 
-🛠️ Setup Requirements
-Required Libraries
-python
-python-docx
-openai
-scikit-learn
-nltk
-tiktoken
-API Configuration
-OpenAI API key required for AI functionality
+## 🛠️ Setup Requirements
 
-Secure input method for API key protection
+### Required Libraries
+- `python`
+- `python-docx`
+- `openai`
+- `scikit-learn`
+- `nltk`
+- `tiktoken`
 
-📖 How It Works
-Upload Textbook: Upload your "English For Today.docx" file
+### API Configuration
+- **OpenAI API key** is required for AI functionality.  
+- Ensure secure handling of the API key to prevent unauthorized access.  
 
-Process Content: System automatically splits textbook into manageable chunks
+---
 
-Create Embeddings: AI generates semantic representations of textbook content
+## 📖 How It Works
+1. **Upload Textbook:** Upload the `"English For Today.docx"` file.  
+2. **Process Content:** The system automatically splits the textbook into manageable chunks.  
+3. **Create Embeddings:** AI generates semantic embeddings for each text chunk.  
+4. **Q&A System:** Students ask questions and receive textbook-based answers instantly.  
 
-Q&A System: Ask questions and get textbook-based answers
+---
 
-💡 Usage
-Starting the System
-python
-# Run the notebook cells in order
+## 💡 Usage
+
+### Starting the System
+```bash
+# Run the notebook cells sequentially
 # Upload your textbook when prompted
 # Enter your OpenAI API key securely
+
 Asking Questions
-Type your question about the textbook content
 
-Get instant answers based on the actual textbook material
+Type your question related to the textbook content.
 
-Use 'help' for example questions
+Receive instant answers based on actual textbook material.
 
-Use 'sample' to see textbook content preview
+Use the following help commands:
 
-Type 'exit' to quit
+help → Show example questions
+
+sample → Preview textbook content
+
+exit → Quit the application
 
 Example Questions
+
 "What should we eat to be healthy?"
 
 "Tell me about Saikat's family"
@@ -62,59 +72,61 @@ Example Questions
 🔍 Technical Process
 Text Processing
 
-Reads Word document content
+Reads content from Word documents.
 
-Splits into sentence-based chunks
+Splits content into sentence-based chunks.
 
-Cleans and prepares text
+Cleans and prepares text for embedding generation.
 
 Semantic Search
 
-Creates embeddings for all text chunks
+Creates embeddings for all text chunks.
 
-Uses cosine similarity to find relevant content
+Uses cosine similarity to find the most relevant sections.
 
-Retrieves top matching textbook sections
+Retrieves top matching textbook segments.
 
 AI-Powered Answers
 
-Combines relevant textbook content with question
+Combines relevant textbook content with user questions.
 
-Generates student-friendly responses
+Generates simple, student-friendly responses.
 
-Ensures answers are textbook-accurate
+Ensures answers are textbook-accurate.
 
 📊 System Output
-Textbook Analysis: Processes entire textbook (129,111+ characters)
 
-Smart Chunking: Creates 479+ manageable text segments
+Textbook Analysis: Processes over 129,111 characters.
 
-Embedding Generation: 1536-dimensional vector representations
+Smart Chunking: Creates 479+ manageable text segments.
 
-Real-time Q&A: Instant textbook-based responses
+Embedding Generation: Produces 1536-dimensional vector representations.
+
+Real-time Q&A: Provides instant, accurate answers.
 
 🎯 Educational Benefits
-Personalized Learning: Get specific answers to individual questions
 
-Textbook Accuracy: All answers verified against actual textbook content
+Personalized Learning: Specific answers for individual questions.
 
-24/7 Availability: Study assistance anytime
+Textbook Accuracy: Ensures content aligns with the textbook.
 
-Confidence Building: Encourages curiosity and exploration
+24/7 Availability: Offers study assistance anytime.
+
+Confidence Building: Encourages curiosity and learning exploration.
 
 ⚠️ Important Notes
-Requires valid OpenAI API key
 
-Internet connection needed for AI services
+Requires a valid OpenAI API key.
 
-Works only with "English For Today - Class 5" textbook
+Internet connection is necessary for AI services.
 
-Answers limited to textbook content only
+Works only with "English For Today - Class 5" textbook.
+
+Answers are limited to textbook content only.
 
 🆘 Help Commands
-help - Show example questions
-
-sample - Preview textbook content
-
-exit - Quit the application
-
+ | Command  | Description              |
+| -------- | ------------------------ |
+| `help`   | Show example questions   |
+| `sample` | Preview textbook content |
+| `exit`   | Quit the application     |
